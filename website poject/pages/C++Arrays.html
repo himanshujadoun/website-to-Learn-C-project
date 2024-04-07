@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Jadoun</title>
+</head>
+
+<link rel="stylesheet" href="css_file\structure.css">
+
+<body>
+  <div class="Content">
+<div class="innercon">
+
+
+<h1>C++ Arrays</h1>
+
+<p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.<br><br>
+
+  To declare an array, define the variable type, specify the name of the array followed by <strong>square brackets   </strong> and specify the number of elements it should store:</p>
+  <p>Elements of an array can be accessed arbitrarily using its indices. They can be used to store a collection 
+    of any type of primitive data type, including int, float, double, char, etc. An array in C/C++ can also store
+     derived data types like structures, pointers, and other data types, which is an addition. The array 
+     representation in a picture is provided below.</p>
+  
+
+     <img src="images\c++-array1.png" style="box-shadow: 2px 2px 2px 2px lightgray;
+     border: 1px solid black; width: 108%; height: 500px;border: box-shadow;">
+  <h1>Advantage of Array in C++ </h1>  
+  
+<ul style="list-style-type: disc;">
+  
+<li>Code Optimization (less code)</li>
+ <li> Random Access</li>
+  <li>Easy to traverse data</li>
+  <li>Easy to manipulate data</li>
+  <li>Easy to sort data etc.</li>
+
+</ul>
+
+<h1>Disadvantage of Array in C++</h1>
+<ul style="list-style-type: disc;"></ul>
+
+<li>Fixed size </li>
+<li>Lack of  flexibility</li>
+<li>Wasted Memory</li>
+<br><br><br><br>
+  <h1>Types of Arrays 
+  </h1>
+
+<p>There are 2 types of arrays in C++ programming:</p>
+  <ol style="list-style-type: 1;">
+ <strong><li>Single Dimensional Array</li>
+ <li>Mutlidimensional Array</li></strong>
+</ol>
+<h1>C++ Single Dimensional Array</h1>
+<p>A <code class="codep">Singal Dimensional Array</code> is a group of elements having the same data type 
+  which are stored in a linear arrangement under a single variable name.</p>
+
+  <div class="examplebox">
+    <h1>Syntax</h1>
+  <div class="examplecode">
+  
+  <p>
+    data_datatype <"String_name"> [no of data to store ] = { data_1 , data_2 ,data_2 , data_4   };
+  </p>
+  
+  
+  </div>
+  </div>
+
+
+  <div class="examplebox">
+    <h1>Example</h1>
+  <div class="examplecode">
+  
+  <p>
+    #include <iostream>  <br><br>
+      using namespace std;  <br><br>
+      int main()  <br><br>
+      {  <br><br>
+       int arr[5]={10, 0, 20, 0, 30};  //creating and initializing array    <br><br>
+              //traversing array    <br><br>
+             
+    
+              &nbsp;&nbsp;cout<< arr[0]<< endl;<br><br>
+              &nbsp;&nbsp;cout<< arr[1]<< endl;<br><br>
+              &nbsp;&nbsp;cout<< arr[2]<< endl;<br><br>
+              &nbsp;&nbsp;cout<< arr[3]<< endl;<br><br>
+              &nbsp;&nbsp;cout<< arr[4]<< endl;  <br><br>
+    return 0 <br> <br>
+    
+    return 0;<br><br>
+              }  <br><br></p>
+  
+  
+  </div>
+  </div>
+
+   <h1>C++ Mutlidimensional Array </h1>
+<p>To declare a <strong>Multidimensional Array</strong>, define the variable type, specify the name of the array followed by   
+  square brackets which specify how many elements the main array has, followed by another set of square brackets
+   which indicates how many elements the sub-arrays have:</p>
+
+   <div class="examplebox">
+    <h1>Syntax</h1>
+  <div class="examplecode">
+  
+  <p>
+    data_datatype <"String_name"> [no of rows][no of column]= {<br><br>
+      &nbsp;&nbsp; &nbsp;&nbsp; {<" Data in rows ">},<br><br>
+      &nbsp;&nbsp; &nbsp;&nbsp; { <" data in columns">}<br><br>
+      };
+  </p>
+  
+  
+  </div>
+  </div>
+
+
+<div class="examplebox">
+  <h1>Example</h1>
+<div class="examplecode">
+
+<p>
+  #include <iostream><br><br>
+    using namespace std;<br><br>
+    
+    int main() {<br><br>
+      string letters[2][4] = {<br><br>
+        { "A", "B", "C", "D" },<br><br>
+        { "E", "F", "G", "H" }<br><br>
+      };<br><br>
+ 
+      
+      cout << letters[0][0];<br><br>
+      return 0;<br><br>
+    }<br><br>
+    
+</p>
+
+
+</div>
+</div>
+
+<h2>Note:</h2><p> <b>You can update Array at special index of Array:   </b></p>
+<div class="examplebox">
+  <h1>Syntax</h1>
+<div class="examplecode">
+
+<p>
+ array_name [index of value that to be change ] = { value to be change   };
+</p>
+
+
+</div>
+</div>
+
+<div class="examplebox">
+  <h1>Example</h1>
+<div class="examplecode">
+
+<p>
+  #include<iostream><br><br>
+    using namespace std;<br><br>
+    int  main(){<br><br>
+     &nbsp;&nbsp; int dt[5]={21,44,53,35,43,};<br><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// value at index 4 is change from 43 to 10<br><br>
+     &nbsp;&nbsp;&nbsp;dt[4]=10;<br><br>
+     &nbsp;&nbsp;&nbsp; cout<<"Value of dt array at index 4 is: "<< dt[4]<< endl;<br><br>
+      
+     return 0;<br><br>
+    }<br><br>
+
+</p>
+
+
+</div>
+</div>
+<div class="foot">
+  <p class="footline">  <b> LearnC++ is your one-stop destination for learning and mastering the C++ programming language.
+    We provide high-quality tutorials, practical examples, and coding exercises to help you become
+     a C++ expert.</b></p><br></div>
+</div>
+     </div>
+  <div class="top"><h1 class="topl" style="color:white;" >Learn C++ With Us  </h1></div>
+   <img class="logo" src= "images\C++ website logo.png" alt=""> 
+   
+  <div class="navbar"> 
+    <a href="Homepage.html"  style="text-decoration:none" >
+         <div class="home">Home</div></a>
+
+         <a href="about.html" style="text-decoration:none">
+          <div class="about">About</div></a>
+
+          <a href="contact.html" style="text-decoration:none">
+            <div class="contact">Contact</div></a>
+
+  </div>
+
+  
+  <div class="ce">
+             <div class="ler">C++ Learn</div>
+            <div class="exe">C++ Exercises</div>
+
+  </div>
+ 
+ 
+ 
+<div>
+  
+</div>
+
+    
+         
+      <div class="scrolling-box">
+    
+        <a href="C++intro.html" class="section" style="text-decoration:none">
+          <div id="sec">Introduction</div>
+        </a>
+        <a href="C++syntax.html" class="section" style="text-decoration:none">
+          <div id="sec">Syntax</div>
+        </a>
+        <a href="C++variables.html" class="section" style="text-decoration:none">
+          <div id="sec">Variable</div>
+        </a>
+        <a href="C++input-output.html" class="section" style="text-decoration:none">
+          <div id="sec">Output/Input</div>
+        </a>
+        <a href="C++Datatypes.html" class="section" style="text-decoration:none">
+          <div id="sec">Data Types</div>
+        </a>
+        <a href="C++Operators.html" class="section" style="text-decoration:none">
+          <div id="sec">Operators</div>
+        </a>
+        <a href="C++Conditional.html" class="section" style="text-decoration:none">
+          <div id="sec">Conditional</div>
+        </a>
+        <a href="C++Break_Continous.html" class="section" style="text-decoration:none">
+          <div id="sec">break/Contionous</div>
+        </a>
+        <a href="C++Switch.html" class="section" style="text-decoration:none">
+          <div id="sec">Switch</div>
+        </a>
+        <a href="C++Loops.html" class="section" style="text-decoration:none">
+          <div id="sec">Loops</div>
+        </a>
+        <a href="C++Arrays.html" class="section" style="text-decoration:none">
+          <div id="sec" style="background-color: #ff7722;">Arrays</div>
+        </a>
+        <a href="C++pointers.html" class="section" style="text-decoration:none">
+          <div id="sec">Pointer</div>
+        </a>
+        
+       
+
+
+           
+      </div>
+       <div class="bottom"> &copy; 2023 Learn C++
+       </div>
+</body>
+<style> 
+ 
+  
+  </style>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Jadoun</title>
+</head>
+
+<link rel="stylesheet" href="css_file\structure.css">
+
+<body>
+  <div class="Content">
+<div class="innercon">
+    <h1>C++ Logical Operators</h1>
+    <p>As with comparison operators, you can also test for <strong>true</strong> (<code>1</code>) or <strong>false</strong> (<code class="codep">0</code>) values with <strong>logical operators</strong>.</p>
+    <p>In C++ programming languages, logical operators are symbols that allow you to combine or modify conditions to make logical evaluations. They are used to perform logical operations on boolean values (true or false).
+    </p>
+       <p> In C++, there are three logical operators:</p>
+       <ol style="list-style-type: 1;"> 
+    
+      <li> <strong>Logical AND ( && ) Operator</strong></li>
+       <li> <strong>Logical OR ( || ) Operator</strong></li>
+       <li> <strong>ogical NOT ( ! ) Operator</strong></li>
+    </ol>
+    <h1>1 .Logical AND ( && ) Operator  </h1>
+    <p>The <strong>C++ logical AND operator (&&)</strong> is a binary operator that returns true if both of its operands are true. Otherwise, 
+        it returns false.</p>
+    <h1>Syntax of Logical AND</h1>
+    
+    <div class="examplebox">
+        <h1>Syntax</h1>
+      <div class="examplecode">
+     <p>
+    (condition 1)&&(condition 2){<br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;//code to be exevued if both codition is true
+     </p>
+      <p>}</p>
+    </div>
+    </div>
+      <div class="examplebox">
+            <h1>Example</h1>
+          <div class="examplecode">
+         <p>
+ 
+            #include <iostream> <br><br>
+            using namespace std;  <br><br>
+            
+            int main()  <br><br>
+            {  <br><br>
+            
+                // initialize variables  <br><br>
+                &nbsp;&nbsp;   int age = 25;  <br><br>
+                &nbsp;&nbsp;bool isStudent = true;  <br><br>
+            
+                // Using AND operator in if condition  <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if (age > 18 && isStudent) {  <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  cout << "You are eligible for a student discount."<< endl;  <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;}  <br><br>
+                
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {  <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    cout << "You are not eligible for a student discount." << endl;  <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         } <br><br>
+                    return 0;  <br><br>
+                } <br><br>
+            
+            
+
+         </p>
+        </div>
+        </div>
+    <h1>2 . Logical OR ( || ) Operator
+    </h1>
+<p>The C++ <strong>logical OR operator ( || )</strong> is a binary operator that returns true if at least one of 
+    its operands is true. It returns false only when both operands are false. </p>
+
+    <div class="examplebox">
+        <h1>Syntax</h1>
+      <div class="examplecode">
+     <p>
+    (condition 1)||(condition 2){<br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;//code to be exevued if any one condition is true or both are true
+     </p>
+      <p>}</p>
+    </div>
+    </div><div class="examplebox">
+        <h1>Example</h1>
+      <div class="examplecode">
+     <p>
+      
+        #include <iostream> <br><br>
+        using namespace std; <br><br>
+        
+        int main() <br><br>
+        { <br><br>
+        
+            int num = 7; <br><br>
+        
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; // using logical or for conditional statement <br><br>
+            if (num <= 0 || num >= 10) { <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;               cout
+                    << "The number is outside the range of 0 to 10."<< endl; <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;    } <br><br>
+            else { <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  cout << "The number is between 0 to 10." << endl; <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  } <br><br>
+        
+            return 0; <br><br>
+        }
+        
+     </p>
+    </div>
+    </div>
+<h1>3 . Logical AND(!)  Operator</h1>
+<p>The C++ <strong>logical NOT operator ( ! )</strong> is a unary operator that is used to negate the value of a condition.
+     It returns true if the condition is false, and false if the condition is true. </p>
+
+
+     <div class="examplebox">
+        <h1>Syntax</h1>
+      <div class="examplecode">
+      <p>
+
+        ! expression
+ //return visa versa of condition
+
+      </p>
+      </div>
+      </div>
+
+      <div class="examplebox">
+        <h1>Example</h1>
+      <div class="examplecode">
+      <p>
+ 
+        
+        #include <iostream> <br><br>
+        using namespace std; <br><br>
+        
+        int main() <br><br>
+        { <br><br>
+        
+            bool isLoggedIn = false; <br><br>
+        
+            // using logical not operator <br><br>
+            if (!isLoggedIn) { <br><br>
+                cout << "Please log in to access this feature." << endl; <br><br>
+            } <br><br>
+            else { <br><br>
+                cout << "Welcome to GeeksforGeeks!" << endl; <br><br>
+            } <br><br>
+        
+            return 0; <br><br>
+        }
+        
+
+      </p>
+      </div>
+      </div>
+<h2>List of Logical operator </h2>
+          
+<img src="images\logicalop.jpg" style="box-shadow: 2px 2px 2px 2px lightgray;
+border: 1px solid black; width: 108%; height: 500px;border: box-shadow;">
+
+<div class="foot">
+  <p class="footline">  <b> LearnC++ is your one-stop destination for learning and mastering the C++ programming language.
+    We provide high-quality tutorials, practical examples, and coding exercises to help you become
+     a C++ expert.</b></p><br></div>
+
+</div>
+     </div>
+  <div class="top"><h1 class="topl" style="color:white;" >Learn C++ With Us  </h1></div>
+  <img class="logo" src= "images\C++ website logo.png" alt=""> 
+  <div class="navbar"> 
+    <a href="Homepage.html"  style="text-decoration:none" >
+         <div class="home">Home</div></a>
+
+         <a href="about.html" style="text-decoration:none">
+          <div class="about">About</div></a>
+
+          <a href="contact.html" style="text-decoration:none">
+            <div class="contact">Contact</div></a>
+
+  </div>
+
+  
+  <div class="ce">
+             <div class="ler">C++ Learn</div>
+            <div class="exe">C++ Exercises</div>
+
+  </div>
+ 
+ 
+ 
+<div>
+  
+</div>
+
+    
+         
+      <div class="scrolling-box">
+    
+        <a href="C++intro.html" class="section" style="text-decoration:none">
+          <div id="sec">Introduction</div>
+        </a>
+        <a href="C++syntax.html" class="section" style="text-decoration:none">
+          <div id="sec">Syntax</div>
+        </a>
+        <a href="C++variables.html" class="section" style="text-decoration:none">
+          <div id="sec">Variable</div>
+        </a>
+        <a href="C++input-output.html" class="section" style="text-decoration:none">
+          <div id="sec">Output/Input</div>
+        </a>
+        <a href="C++Datatypes.html" class="section" style="text-decoration:none">
+          <div id="sec">Data Types</div>
+        </a>
+        <a href="C++Operators.html" class="section" style="text-decoration:none">
+          <div id="sec" style="background-color: #ff7722;">Operators</div>
+        </a>
+        
+        <a href="C++Operators.html"  class="section" style="text-decoration:none">
+          <div id="subsec"  >Assingment</div>
+         </a>
+
+         <a href="C++arthmeticalop.html" class="section" style="text-decoration:none">
+          <div id="subsec" >Arithmetical</div>
+         </a>
+
+         <a href="C++comparisionop.html" class="section" style="text-decoration:none">
+          <div id="subsec" >Comparision</div>
+         </a>
+
+         <a href="C++logicalop.html" class="section" style="text-decoration:none">
+          <div id="subsec" style="background-color: lightgreen;"  > Logical</div>
+         </a>
+
+        <a href="C++Conditional.html" class="section" style="text-decoration:none">
+          <div id="sec">Conditional</div>
+        </a>
+        <a href="C++Break_Continous.html" class="section" style="text-decoration:none">
+          <div id="sec">break/Contionous</div>
+        </a>
+        <a href="C++Switch.html" class="section" style="text-decoration:none">
+          <div id="sec">Switch</div>
+        </a>
+        <a href="C++Loops.html" class="section" style="text-decoration:none">
+          <div id="sec">Loops</div>
+        </a>
+        <a href="C++Arrays.html" class="section" style="text-decoration:none">
+          <div id="sec">Arrays</div>
+        </a>
+        <a href="C++pointers.html" class="section" style="text-decoration:none">
+          <div id="sec">Pointer</div>
+        </a>
+        
+       
+
+
+           
+      </div>
+
+        <div class="bottom"> &copy; 2023 Learn C++
+       </div>
+</body>
+<style> 
+ 
+  
+  </style>
+</html>
